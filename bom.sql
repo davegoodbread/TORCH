@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.69, for redhat-linux-gnu (x86_64)
 --
--- Host: 192.237.246.191    Database: bndr_s001
+-- Host: 192.237.246.191    Database: bndr_s003
 -- ------------------------------------------------------
 -- Server version	5.1.69
 
@@ -47,7 +47,7 @@ CREATE TABLE `bom` (
   PRIMARY KEY (`item`),
   KEY `item` (`item`),
   KEY `part` (`part`)
-) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,6 +76,7 @@ INSERT INTO `bom` VALUES (19,NULL,1,NULL,'Nut, SS, 8-32,',3,'each',NULL,'McMaste
 INSERT INTO `bom` VALUES (21,NULL,12,NULL,'PERIPHERAL DRIVERS, HALF-H, 36V, 1A, DIP-16 ',2,'each',NULL,NULL,'SN754410NE',NULL,NULL,'http://www.newark.com/texas-instruments/sn754410ne/ic-peripheral-drivers-half-h-36v/dp/08F8145?CMP=AFC-OP',NULL,NULL,NULL,NULL,NULL,NULL,0,'cae1b5260e902a723090725a973d963e5757316f');
 INSERT INTO `bom` VALUES (22,'PART005',1,NULL,'Reducing Coupling, Mod',1,'each',NULL,NULL,NULL,NULL,NULL,'https://www.dropbox.com/s/m2dqart000tvkq6/Reducing%20Couple.PDF',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'6af333bf80dad4393ffb88074d888af41027fa77');
 INSERT INTO `bom` VALUES (23,'PART006',2,NULL,'End Cap',1,'each',NULL,NULL,NULL,NULL,NULL,'https://www.dropbox.com/s/m2yo5tw2ewlmx1b/ENDCAP.STL',NULL,'Part for 3D print',NULL,NULL,NULL,NULL,0,'7a8c610e718453f1ecc0f22b518fca4ad9aff8bb');
+INSERT INTO `bom` VALUES (24,'BH01',NULL,NULL,'butthole',1,'each',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,'a9be29f95ff5152deece24ebd73efbf0ce9f19db');
 /*!40000 ALTER TABLE `bom` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -88,4 +89,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-01-31 14:04:28
+-- Dump completed on 2014-01-31 16:11:40
